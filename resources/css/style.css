@@ -1,0 +1,298 @@
+/*stylesheet Colmar Academy*/
+
+html {
+  font-size: 16px;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: scroll;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #060505;
+}
+
+h2 {
+  font-size: 1.65rem;
+  font-weight: bold;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #060505;
+}
+h3,
+header span {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #060505;
+}
+
+p {
+  font-size: 0.85rem;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #5B5858;
+  opacity: 0.6;
+}
+
+header {
+  line-height: 4rem;
+}
+
+header img {
+  display: inline-block;
+  margin-left: 1.5rem;
+  vertical-align: middle;
+}
+
+header span {
+  display: inline-block;
+  color: black;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+header .academy {
+  color: #A9A7A7;
+  opacity: 0.6;
+}
+
+header .academy:hover {
+  color: ##060505
+}
+
+nav {
+  display: inline-block;
+  position: absolute;
+  right: 1.5rem;
+}
+
+ul li {
+  display: inline;
+  margin-left: 1rem;
+}
+
+ul li a {
+  color: black;
+}
+
+/*Banner*/
+
+.banner {
+  background-color: #C4C2C2;
+  padding: 2rem 1.5rem;
+  width: 100%;
+  white-space: nowrap;
+  padding-right: 2.5rem;
+}
+
+.banner:last-child {
+  text-align: center;
+}
+
+.banner img {
+  width: 60%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1.5rem;
+}
+
+.banner-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.banner p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 28rem;
+  white-space: normal;
+  opacity: 1;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+.banner button {
+  color: white;
+  background-color: #5C5A5A;
+  padding: .5rem 1rem;
+}
+
+
+/*Information*/
+
+.information {
+  display: block;
+  padding: 2rem 1.5rem;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.info-main {
+  display: inline-block;
+  width: 60%;
+  vertical-align: top;
+}
+
+.info-main img {
+  width: 100%;
+}
+
+.info-main h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-main p {
+  margin-bottom: 2rem;
+}
+
+.info-side {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+
+.info-container {
+  border: 0.15rem solid #EBE5E5;
+  margin-bottom: 0.25rem;
+  box-sizing: border-box;
+}
+
+.info-container img {
+  display: inline-block;
+  width: 35%;
+  vertical-align: middle;
+}
+
+.info-container-text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+.info-container-text p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  white-space: normal;
+  width: 16rem;
+}
+
+/*Learning*/
+
+.learning {
+  padding: 2rem 4rem;
+  background-color: #CCCCCC;
+  margin: 0 auto;
+}
+
+.learning h2,
+.exhibit h2 {
+  text-align: center;
+}
+
+.course {
+  display: inline-block;
+  width: 25%;
+  margin: 2rem;
+}
+
+.course img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.course h3 {
+  text-align: center;
+}
+
+.course p {
+  margin: 0.5rem 1rem;
+}
+
+/*Thesis*/
+
+.exhibit {
+  padding: 2rem 0rem 2rem 1.5rem;
+  white-space: nowrap;
+  background-color: #EBE5E5;
+  margin: 0 auto;
+}
+
+.thesis-main {
+  width: 60%;
+  display: inline-block;
+  margin: 2rem 1.5rem;
+  vertical-align: top;
+}
+
+.thesis-main video {
+  width: 100%;
+}
+
+.thesis-main h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.thesis-side {
+  display: inline-block;
+  margin: 2rem 0rem;
+  vertical-align: top;
+  width: 22rem;
+  background-color: inherit;
+}
+
+.thesis {
+  display: block;
+  border: 0.15rem solid #EBE5E5;
+  margin-bottom: 0.25rem;
+  width: 20rem;
+}
+
+.thesis img {
+  width: 35%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.thesis-text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1rem;
+}
+
+.thesis-text p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/*Footer*/
+
+footer {
+  padding: 1rem 1.5rem;
+}
+
+.footer-links {
+  position: absolute;
+  right: 0;
+}
+
+.footer-links a {
+  margin-left: 0.5rem;
+  color: #8D8A8A;
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 1080px) {
+  
+}
