@@ -4,12 +4,13 @@ html {
   font-size: 16px;
   max-width: 100%;
   box-sizing: border-box;
-  overflow-x: scroll;
+  white-space: normal;
 }
 
 body {
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
+  margin-right: -7.5%;
 }
 
 h1 {
@@ -44,6 +45,7 @@ p {
 
 header {
   line-height: 4rem;
+  width: 100%;
 }
 
 header img {
@@ -59,13 +61,17 @@ header span {
   font-weight: bold;
 }
 
-header .academy {
+header #academy {
   color: #A9A7A7;
   opacity: 0.6;
 }
 
-header .academy:hover {
+header #academy:hover {
   color: ##060505
+}
+
+.mobile {
+  display: none;
 }
 
 nav {
@@ -134,6 +140,7 @@ ul li a {
   padding: 2rem 1.5rem;
   width: 100%;
   white-space: nowrap;
+  margin: 0;
 }
 
 .info-main {
@@ -165,6 +172,7 @@ ul li a {
   border: 0.15rem solid #EBE5E5;
   margin-bottom: 0.25rem;
   box-sizing: border-box;
+  width: 28rem;
 }
 
 .info-container img {
@@ -189,9 +197,10 @@ ul li a {
 /*Learning*/
 
 .learning {
-  padding: 2rem 4rem;
+  padding: 2rem 2.5rem;
   background-color: #CCCCCC;
-  margin: 0 auto;
+  margin: 0;
+  width: 100%;
 }
 
 .learning h2,
@@ -221,10 +230,11 @@ ul li a {
 /*Thesis*/
 
 .exhibit {
-  padding: 2rem 0rem 2rem 1.5rem;
+  padding: 2rem 3.5rem 2rem 1.5rem;
   white-space: nowrap;
   background-color: #EBE5E5;
-  margin: 0 auto;
+  margin: 0;
+  width: 100%;
 }
 
 .thesis-main {
@@ -279,6 +289,8 @@ ul li a {
 
 footer {
   padding: 1rem 1.5rem;
+  width: 100%;
+  margin: 0;
 }
 
 .footer-links {
@@ -291,8 +303,180 @@ footer {
   color: #8D8A8A;
 }
 
+/*fixes div issue with resing in thesis section*/
+
+@media only screen and (max-width: 1210px) {
+  .thesis {
+    width: 17rem;
+  }
+}
+
+@media only screen and (max-width: 1165px) {
+  .thesis {
+    width: 13rem;
+  }
+}
+
+@media only screen and (max-width: 1111px) {
+  .thesis {
+    width: 10rem;
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+  .thesis {
+    width: 8rem;
+  }
+}
+
 /*Mobile*/
 
-@media only screen and (max-width: 1080px) {
-  
+@media only screen and (max-width: 650px) {
+  html {
+  max-width: 650px;
+  margin-right: 0;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline-block;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #060505;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #060505;
+  }
+  h3,
+  header span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #060505;
+  }
+
+  p {
+    font-size: 0.65rem;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #5B5858;
+    opacity: 0.6;
+  }
+
+  header {
+    height: 4rem;
+    white-space: nowrap;
+  }
+
+  header img {
+    width: 25%;
+    height: 4rem;
+    margin-left: 0.75rem;
+  }
+
+  nav {
+    position: static;
+    width: 75%;
+  }
+  nav a {
+    margin: auto;
+    width: 25%;
+  }
+
+  .banner img,
+  .banner-text, .info-side, .thesis-main {
+    display: block;
+    width: 100%;
+  }
+
+  .banner {
+    padding: 0rem;
+    text-align: center;
+  }
+
+  .banner-text {
+    width: 80%;
+  }
+
+  .banner-text h1 {
+    margin: 2rem 1rem;
+    text-align: left;
+    width: 100%;
+  }
+
+  .banner-text p {
+    margin: 1.5rem 1rem;
+    text-align: left;
+    width: 100%;
+  }
+
+  .banner button {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .info-container {
+    border: 0px solid black;
+    width: 100%;
+    max-height: 20rem;
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 0 auto;
+  }
+
+  .info-container img {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      max-height: 10rem;
+  }
+
+  .info-container-text {
+    display: block;
+    margin-left: 15%;
+    margin-top: 5%;
+  }
+
+  .learning,
+  .exhibit {
+    background-color: white;
+    padding: 0;
+  }
+
+  .learning h2,
+  .exhibit h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .course {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #C4C2C2;
+    padding: 1rem 0rem 1.5rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  video {
+    margin-bottom: 1.5rem;
+    width: 95%;
+  }
+
+  footer {
+    padding: 1rem 0rem;
+  }
 }
